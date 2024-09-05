@@ -3,15 +3,12 @@ module.exports = {
   content: ["*.html"],
   theme: {
     extend: {
-      backgroundImage: {
-        "header-desktop": "url('../images/bg-header-desktop.png')",
-        "header-mobile": "url('../images/bg-header-mobile.png')",
-      },
       colors: {
         "strong-cyans": "hsl(171, 66%, 44%)",
         "light-blue": "hsl(233, 100%, 69%)",
         "dark-grayish-blue": "hsl(210, 10%, 33%)",
         "grayish-blue": "hsl(201, 11%, 66%)",
+        footer: "hsla(201, 11%, 66%, 0.1002)",
       },
       boxShadow: {
         "download-ios":

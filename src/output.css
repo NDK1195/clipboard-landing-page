@@ -564,21 +564,13 @@ html {
   position: absolute;
 }
 
-.relative{
-  position: relative;
-}
-
-.left-0{
-  left: 0px;
-}
-
-.top-0{
-  top: 0px;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-16{
@@ -589,32 +581,12 @@ html {
   margin-bottom: 1rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .flex{
   display: flex;
 }
 
 .grid{
   display: grid;
-}
-
-.h-\[363px\]{
-  height: 363px;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.max-h-\[363px\]{
-  max-height: 363px;
-}
-
-.min-h-\[363px\]{
-  min-height: 363px;
 }
 
 .min-h-dvh{
@@ -625,16 +597,36 @@ html {
   width: 125px;
 }
 
+.w-\[55px\]{
+  width: 55px;
+}
+
 .w-full{
   width: 100%;
+}
+
+.max-w-\[1110px\]{
+  max-width: 1110px;
+}
+
+.max-w-\[470px\]{
+  max-width: 470px;
 }
 
 .max-w-\[730px\]{
   max-width: 730px;
 }
 
-.max-w-\[470px\]{
-  max-width: 470px;
+.max-w-\[825px\]{
+  max-width: 825px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-\[auto_1fr_auto\]{
@@ -645,21 +637,36 @@ html {
   flex-direction: column;
 }
 
+.place-items-center{
+  place-items: center;
+}
+
 .items-center{
   align-items: center;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-12{
+  gap: 3rem;
 }
 
 .gap-6{
   gap: 1.5rem;
 }
 
+.gap-y-5{
+  row-gap: 1.25rem;
+}
+
 .rounded-\[28px\]{
   border-radius: 28px;
 }
 
-.bg-strong-cyans{
-  --tw-bg-opacity: 1;
-  background-color: hsl(171 66% 44% / var(--tw-bg-opacity));
+.bg-footer{
+  background-color: hsla(201, 11%, 66%, 0.1002);
 }
 
 .bg-light-blue{
@@ -667,16 +674,9 @@ html {
   background-color: hsl(233 100% 69% / var(--tw-bg-opacity));
 }
 
-.bg-header-mobile{
-  background-image: url('../images/bg-header-mobile.png');
-}
-
-.bg-cover{
-  background-size: cover;
-}
-
-.bg-no-repeat{
-  background-repeat: no-repeat;
+.bg-strong-cyans{
+  --tw-bg-opacity: 1;
+  background-color: hsl(171 66% 44% / var(--tw-bg-opacity));
 }
 
 .px-8{
@@ -687,6 +687,11 @@ html {
 .py-\[13px\]{
   padding-top: 13px;
   padding-bottom: 13px;
+}
+
+.py-\[52px\]{
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 
 .pb-\[160px\]{
@@ -714,10 +719,6 @@ html {
   font-weight: 600;
 }
 
-.leading-none{
-  line-height: 1;
-}
-
 .leading-\[26px\]{
   line-height: 26px;
 }
@@ -726,12 +727,20 @@ html {
   line-height: 30px;
 }
 
+.leading-none{
+  line-height: 1;
+}
+
 .tracking-\[-0\.522px\]{
   letter-spacing: -0.522px;
 }
 
 .tracking-\[0\.12px\]{
   letter-spacing: 0.12px;
+}
+
+.tracking-\[0\.135px\]{
+  letter-spacing: 0.135px;
 }
 
 .tracking-\[0\.5px\]{
@@ -753,18 +762,6 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.bg-blend-multiply{
-  background-blend-mode: multiply;
-}
-
-.bg-blend-screen{
-  background-blend-mode: screen;
-}
-
-.bg-blend-overlay{
-  background-blend-mode: overlay;
-}
-
 .shadow-download-ios{
   --tw-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 10px 20px 0px rgba(137, 229, 199, 0.50);
   --tw-shadow-colored: inset 0px -3px 0px 0px var(--tw-shadow-color), 0px 10px 20px 0px var(--tw-shadow-color);
@@ -783,11 +780,40 @@ html {
   transition-duration: 150ms;
 }
 
+.hover\:fill-strong-cyans:hover{
+  fill: hsl(171, 66%, 44%);
+}
+
+.hover\:text-strong-cyans:hover{
+  --tw-text-opacity: 1;
+  color: hsl(171 66% 44% / var(--tw-text-opacity));
+}
+
 .hover\:opacity-80:hover{
   opacity: 0.8;
 }
 
 @media (min-width: 1280px){
+  .xl\:order-1{
+    order: 1;
+  }
+
+  .xl\:order-2{
+    order: 2;
+  }
+
+  .xl\:order-3{
+    order: 3;
+  }
+
+  .xl\:order-4{
+    order: 4;
+  }
+
+  .xl\:order-5{
+    order: 5;
+  }
+
   .xl\:mb-14{
     margin-bottom: 3.5rem;
   }
@@ -796,29 +822,55 @@ html {
     width: 227px;
   }
 
-  .xl\:max-w-\[227px\]{
-    max-width: 227px;
+  .xl\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:flex-row{
     flex-direction: row;
   }
 
+  .xl\:place-items-start{
+    place-items: start;
+  }
+
   .xl\:items-center{
     align-items: center;
+  }
+
+  .xl\:justify-between{
+    justify-content: space-between;
+  }
+
+  .xl\:gap-0{
+    gap: 0px;
   }
 
   .xl\:gap-4{
     gap: 1rem;
   }
 
-  .xl\:bg-header-desktop{
-    background-image: url('../images/bg-header-desktop.png');
+  .xl\:gap-\[135px\]{
+    gap: 135px;
+  }
+
+  .xl\:gap-x-10{
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
+  .xl\:gap-y-3{
+    row-gap: 0.75rem;
   }
 
   .xl\:px-0{
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .xl\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .xl\:pb-\[150px\]{
